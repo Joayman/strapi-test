@@ -14,9 +14,10 @@ export default function Homepage() {
         <div>
             {data.data.map((reviews) => (
                 <div key={reviews.id} className="review-card">
-                    <div className="rating"><p>{reviews.attributes.Rating}</p></div>
+                    <div className="rating">{reviews.attributes.Rating}</div>
                     <h2>{reviews.attributes.Title}</h2>
                     <small>console list</small>
+                    <p>{reviews.attributes.Body.substring(0, 200)}...</p>
                     <Link to={`/details/${reviews.id}`}>Read more</Link>
                 </div>
             ))}

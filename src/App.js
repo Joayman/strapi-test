@@ -4,7 +4,7 @@ import {ApolloClient, InMemoryCache, ApolloProvider} from "@apollo/client";
 import Homepage from "./pages/Homepage";
 import ReviewDetails from "./pages/ReviewDetails";
 import Category from "./pages/Category";
-import SiteHeader from "./components/SiteHeader";
+
 
 // Apollo Client
 const client = new ApolloClient({
